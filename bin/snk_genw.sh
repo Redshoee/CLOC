@@ -378,7 +378,7 @@ status_t _CN__InitContext(){
     ErrorCheck(Create the program, err);
 
     /* Add the BRIG module to hsa program.  */
-    err = hsa_ext_program_add_module(_CN__HsaProgram, _CN__BrigModule);
+    err = hsa_ext_program_add_module(_CN__HsaProgram, *_CN__BrigModule);
     ErrorCheck(Adding the brig module to the program, err);
 
     /* Determine the agents ISA.  */
