@@ -26,7 +26,7 @@ sudo apt-get install git
 sudo apt-get install make
 sudo apt-get install g++
 sudo apt-get install libstdc++-4.8-dev
-sudo apt-get install libelf
+sudo apt-get install libelf1
 sudo apt-get install libtinfo-dev
 sudo apt-get install re2c
 sudo apt-get install libbsd-dev
@@ -56,9 +56,9 @@ Execute these commands:
 ```
 cd ~/git
 git clone https://github.com/HSAfoundation/HSA-Drivers-Linux-AMD.git
-sudo dpkg -i HSA-Drivers-Linux-AMD/kfd-1.2/ubuntu/*.deb
+sudo dpkg -i HSA-Drivers-Linux-AMD/kfd-1.4/ubuntu/*.deb
 echo "KERNEL==\"kfd\", MODE=\"0666\"" | sudo tee /etc/udev/rules.d/kfd.rules
-sudo cp HSA-Drivers-Linux-AMD/kfd-1.2/libhsakmt.so.1 /opt/hsa/lib
+sudo cp HSA-Drivers-Linux-AMD/kfd-1.4/libhsakmt.so.1 /opt/hsa/lib
 ```
 
 ## Reboot System
